@@ -11,6 +11,23 @@
     <TextView
         android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send notification"
+        android:id="@+id/sendNotificationButton"
+        android:layout_centerVertical="true" android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customNotificationInput"
+        android:minEms="10"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:hint="Type message here"
+        android:layout_above="@+id/sendNotificationButton" android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
